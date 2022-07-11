@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project name
+# Awesome books with ES6
 
-> Project description
+> This is a web page that shows a list of books, allows to add and delete books. The page has an SPA approach.
 
 ## Built With
 
@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://vanecode.github.io/art-gallery/)
+[Live Demo Link](https://vanecode.github.io/awesome-books-ES6/)
 
 ## Getting Started
 
@@ -35,16 +35,9 @@ To get a local copy up and running follow these simple example steps.
 git clone https://github.com/VaneCode/art-gallery.git
 
 
-## Authors
+## Author
 
 👤 **Vanessa Bonito**
-
-- GitHub: [@githubhandle](https://github.com/VaneCode)
-- Twitter: [@twitterhandle](https://twitter.com/BonitoNarvaez)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/vanessa-bonito-narv%C3%A1ez-6681941b5/)
-
-
-**Author name**
 
 - GitHub: [@githubhandle](https://github.com/VaneCode)
 - Twitter: [@twitterhandle](https://twitter.com/BonitoNarvaez)

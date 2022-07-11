@@ -1,12 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/index.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <!--Header-->
+    <header>
+        <nav>
+            <p id="logo">Awesome books</p>
+            <ul class="style-none" id="nav-ul">
+                <li>
+                    <a href="#list-book-section" class="nav-a" id="books">Books</a>
+                </li>
+                <li>
+                    <a href="#add-book-section" id="add-book" class="nav-a">Add new book</a>
+                </li>
+                <li>
+                    <a href="#contact-section" class="nav-a">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--Main-->
+    <main>
+        <!--Date-->
+        <div id="div-date">
+            <small class="date"></small>
+        </div>
+        <!--Section list books-->
+        <section id="list-book-section">
+            <div class="div-container">
+                <h1>All awesome books</h1>
+                <ul class="style-none" id="booksUl">
+
+                </ul>
+            </div>
+        </section>
+        <!--Section to add books-->
+        <section id="add-book-section" class="hide">
+            <div class="div-container">
+                <h1>Add a new book</h1>
+                <form action="#" id="bookFrm">
+                    <input type="text" id="bookTitle" placeholder="Title">
+                    <input type="text" id="bookAuthor" placeholder="Author">
+                    <button id="addBtn" type="submit">Add</button>
+                </form>
+            </div>
+        </section>
+
+        <!--Contact section-->
+        <section id="contact-section" class="hide">
+            <div class="div-container">
+                <h1>Contact information</h1>
+                <p>Do you have any questions or you just want to say Hello? You can reach out to us!</p>
+                <ul>
+                    <li>
+                        <p>E-mail: bookscollections@mail.com</p>
+                    </li>
+                    <li>
+                        <p>Phone number: 03047049871</p>
+                    </li>
+                    <li>
+                        <p>Address: Central Avenue, City, Country</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!--Footer-->
+    <footer>
+        <div class="div-container">
+            <p>Copyright ©️ 2022 Vanessa Bonito</p>
+        </div>
+    </footer>
+    <script type="module" src="./dist/index.js"></script>
 </body>
+
 </html>
