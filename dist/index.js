@@ -1,7 +1,8 @@
 //Import js modules
-import * as domElements from './modules/domElements.js';
-import classDynamicContent from './modules/classDynamicContent';
-import classBooksUl from './modules/dynamic.js';
+import books from '../app/modules/classData.js';
+import * as domElements from '../app/modules/domElements.js';
+import classDynamicContent from '../app/modules/classDynamicContent.js';
+import classBooksUl from '../app/modules/classBooksUl.js';
 
 // -------------------EVENTS-----------------------------------//
 domElements.addBtn.addEventListener('click', (e) => {
@@ -26,7 +27,7 @@ domElements.addBtn.addEventListener('click', (e) => {
 domElements.booksUl.addEventListener('click', (e) => {
     if (e.target.tagName === 'BUTTON') {
         const { id } = e.target;
-        classBooksUl.removeBook(id);
+        classBooksUl.removeBookUI(id);
     }
 });
 
@@ -39,13 +40,6 @@ domElements.arrLinks.forEach((link, i) => {
 
 //---------------------------------LOAD PAGE---------------------------//
 window.addEventListener('load', () => {
-    // Local storage
-    if (localStorage.getItem('books')) {
-        books = JSON.parse(localStorage.getItem('books'));
-    } else {
-        localStorage.setItem('books', JSON.stringify(books));
-    }
-
     // Create booksUl
     classBooksUl.createBooksUl();
 });
