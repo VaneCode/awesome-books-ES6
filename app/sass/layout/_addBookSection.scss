@@ -1,0 +1,23 @@
+#add-book-section {
+  width: 100%;
+  align-items: center;
+}
+
+#add-book-section .div-container {
+  width: 40vw;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#addBtn {
+  align-self: flex-end;
+  width: 3rem;
+  height: 1.6rem;
+  text-align: center;
+  line-height: 1.6rem;
+}
