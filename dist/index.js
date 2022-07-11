@@ -1,8 +1,8 @@
 //Import js modules
-import books from '../app/modules/classData.js';
 import * as domElements from '../app/modules/domElements.js';
 import classDynamicContent from '../app/modules/classDynamicContent.js';
 import classBooksUl from '../app/modules/classBooksUl.js';
+import { DateTime } from '../app/modules/luxon.min.js';
 
 // -------------------EVENTS-----------------------------------//
 domElements.addBtn.addEventListener('click', (e) => {
@@ -40,6 +40,10 @@ domElements.arrLinks.forEach((link, i) => {
 
 //---------------------------------LOAD PAGE---------------------------//
 window.addEventListener('load', () => {
+    //Show current time
+    const dateP = document.querySelector('.date');
+    const currentDate = DateTime.now();
+    dateP.textContent = `${currentDate.toLocaleString(DateTime.DATETIME_MED)}`;
     // Create booksUl
     classBooksUl.createBooksUl();
 });
