@@ -1,10 +1,12 @@
-//-------------------GET DOM ELEMENTS-----------------//
+// -------------------GET DOM ELEMENTS-----------------//
 
-//-------------------MANAGE BOOKS LIST-----------------//
+// -------------------MANAGE BOOKS LIST-----------------//
 export const booksUl = document.querySelector('#booksUl');
+export const titleInp = document.querySelector('#bookTitle');
+export const authorInp = document.querySelector('#bookAuthor');
 export const addBtn = document.querySelector('#addBtn');
 
-//-------------------DYNAMIC CONTENT------------------//
+// -------------------DYNAMIC CONTENT------------------//
 export const sections = document.querySelectorAll('section');
 export const arrSections = Array.from(sections);
 

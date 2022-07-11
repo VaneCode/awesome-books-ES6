@@ -1,9 +1,9 @@
-//Import modules
-import BookClass from './classBook.js'
+// Import modules
+import BookClass from './classBook.js';
 import books from './classData.js';
 import * as domElements from './domElements.js';
 
-//Class to manage books Ul
+// Class to manage books Ul
 export default class BooksUlClass {
   // Method to generate an li element for book ul list
   static generateBooksLi = (book) => {
@@ -45,7 +45,7 @@ export default class BooksUlClass {
   }
 
   // Method to add a new book to the array books
-  static addNewBook = () => {
+  static addNewBook = (title, author) => {
     // Calculate book id
     let id = 0;
     if (books.length > 1) {
@@ -55,8 +55,8 @@ export default class BooksUlClass {
     }
 
     // Get book's information from the add-book-frm form
-    const title = document.querySelector('#bookTitle').value;
-    const author = document.querySelector('#bookAuthor').value;
+    // const title = document.querySelector('#bookTitle').value;
+    // const author = document.querySelector('#bookAuthor').value;
     // Create new book object
     const newBook = new BookClass(id, title, author);
     // Add the new book object to the books array
